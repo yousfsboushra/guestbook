@@ -1,0 +1,119 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+input,
+select,
+textarea{
+    padding: 3px 5px;
+}
+.form-item-submit input{
+    width: 100px;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+.modal{
+    width: 300px;
+    margin: 50px auto 0;
+    border: solid 1px #000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #666;
+}
+.modal.big-size{
+    width: 600px;
+    max-width: 80%;
+}
+.modal-header{
+    text-align: center;
+    border-bottom: solid 1px #666;
+    padding: 10px 0;
+}
+.modal-content{
+    padding: 20px;
+}
+
+
+
+.form-item{
+    margin-bottom: 10px;
+}
+.form-item-label{
+    font-weight: bold;
+}
+.form-item-input{
+    margin-top: 3px;
+}
+.form-item-input input,
+.form-item-input select,
+.form-item-input textarea{
+    width: 100%;
+}
+.form-error,
+.form-info{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+.form-info{
+    color: #00ff00;
+}
+.form-item-submit{
+    margin-top: 20px;
+    text-align: right;
+}
+.field-info{
+    font-size: 10px;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.field-info ul{
+    padding: 0 0 0 4px;
+    margin: 5px;
+}
+.field-info li{
+    font-size: 9px;
+    list-style: circle;
+    list-style-position: inside;
+    font-weight: normal;
+}
+
+.help-link{
+    float: left;
+    font-size: 12px;
+}
+header{
+    padding: 20px;
+    background: #ccc;
+    border-bottom: solid 1px #999;
+    box-shadow: 0px 0px 5px 0px #666;
+}
+.welcome{
+    font-size: 18px;
+    font-weight: bold;
+}
+.logout-link{
+    float: right;
+    cursor: pointer;
+}
+.message-item{
+    padding: 5px;
+}
+
+.message-item.right{
+    text-align: right;
+}
+.message-item.left{
+    text-align: left;
+}
+.message-item-links a{
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: underline;
+}

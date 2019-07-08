@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GUESTBOOK - Messages</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body onload="loadMessages();listUsers();">
+    <header>
+        <a onclick="logout();" class="logout-link">Logout</a>
+        <div class="welcome">Welcome <span id="username"></span></div>
+    </header>
+    <div id="messages-list"></div>
+    <div class="modal big-size">
+        <div class="modal-header">
+            <h1>Create Message</h1>
+        </div>
+        <div class="modal-content">
+            <form action="" onsubmit="submitMessage(this);return false;" method="post">
+                <div class="form-item">
+                    <label class="form-item-label">Recipient</label>
+                    <div class="form-item-input">
+                        <select name="recipient_id" id="field_recipient_id" value="">
+                            <option value="0">Select recipient</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label class="form-item-label">Message</label>
+                    <div class="form-item-input">
+                        <textarea name="message" maxlength="255" id="field_text" placeholder="Enter your message"></textarea>
+                    </div>
+                    <div class="field-info">255 characters max</div>
+                </div>
+                
+                <div class="form-item">
+                    <div class="form-error"></div>
+                    <div class="form-info"></div>
+                    <div class="form-item-submit">
+                        <input type="hidden" name="message_id" id="field_message_id" value="" />
+                        <input type="hidden" name="reply_to" id="field_reply_to" value="" />
+                        <input type="hidden" name="api" id="field_api" value="create" />
+                        <input type="submit" name="submit" value="Submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GUESTBOOK - Signup</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Signup</h1>
+        </div>
+        <div class="modal-content">
+        <form action="" onsubmit="auth(this);return false;" method="post">
+            <div class="form-item">
+                <label class="form-item-label">Username</label>
+                <div class="form-item-input">
+                    <input type="text" name="username" maxlength="20" value="" placeholder="Enter your username" />
+                </div>
+                <div class="field-info">Password must meet these requirements:
+                    <ul>
+                        <li>Consists of at least 4 charachters</li>
+                        <li>May contain letters, numbers, dashes, underscores and dots</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-item">
+                <label class="form-item-label">Password</label>
+                <div class="form-item-input">
+                    <input type="password" name="password" value="" placeholder="Enter your password" />
+                </div>
+                <div class="field-info">
+                    Password must meet these requirements:
+                    <ul>
+                        <li>Consists of at least 6 charachters</li>
+                        <li>Contains lowercase and uppercase letters</li>
+                        <li>Contains numbers and special charachters</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="form-error"></div>
+                <div class="form-info"></div>
+                <div class="form-item-submit">
+                    <label class="help-link"><a href="index.html">Already registered?</a></label>
+                    <input type="hidden" name="api" value="signup" />
+                    <input type="submit" name="submit" value="Submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
